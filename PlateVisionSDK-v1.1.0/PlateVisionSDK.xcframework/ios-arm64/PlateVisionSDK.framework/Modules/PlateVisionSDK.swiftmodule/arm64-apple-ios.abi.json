@@ -1,0 +1,4612 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "PlateVisionSDK",
+    "printedName": "PlateVisionSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "PlateVisionSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "PlateVisionSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "PlateVisionSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PlateVisionSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "AudioToolbox",
+        "printedName": "AudioToolbox",
+        "declKind": "Import",
+        "moduleName": "PlateVisionSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ImageIO",
+        "printedName": "ImageIO",
+        "declKind": "Import",
+        "moduleName": "PlateVisionSDK"
+      },
+      {
+        "kind": "Var",
+        "name": "PlateVisionSDKVersion",
+        "printedName": "PlateVisionSDKVersion",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:14PlateVisionSDK0aB10SDKVersionSSvp",
+        "mangledName": "$s14PlateVisionSDK0aB10SDKVersionSSvp",
+        "moduleName": "PlateVisionSDK",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:14PlateVisionSDK0aB10SDKVersionSSvg",
+            "mangledName": "$s14PlateVisionSDK0aB10SDKVersionSSvg",
+            "moduleName": "PlateVisionSDK",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlateVisionError",
+        "printedName": "PlateVisionError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "licenceNotActivated",
+            "printedName": "licenceNotActivated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PlateVisionError.Type) -> PlateVisionSDK.PlateVisionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlateVisionError",
+                    "printedName": "PlateVisionSDK.PlateVisionError",
+                    "usr": "s:14PlateVisionSDK0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PlateVisionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionError",
+                        "printedName": "PlateVisionSDK.PlateVisionError",
+                        "usr": "s:14PlateVisionSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK0aB5ErrorO19licenceNotActivatedyA2CmF",
+            "mangledName": "$s14PlateVisionSDK0aB5ErrorO19licenceNotActivatedyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidSampleBuffer",
+            "printedName": "invalidSampleBuffer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PlateVisionError.Type) -> PlateVisionSDK.PlateVisionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlateVisionError",
+                    "printedName": "PlateVisionSDK.PlateVisionError",
+                    "usr": "s:14PlateVisionSDK0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PlateVisionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionError",
+                        "printedName": "PlateVisionSDK.PlateVisionError",
+                        "usr": "s:14PlateVisionSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK0aB5ErrorO19invalidSampleBufferyA2CmF",
+            "mangledName": "$s14PlateVisionSDK0aB5ErrorO19invalidSampleBufferyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "unsupportedImage",
+            "printedName": "unsupportedImage",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PlateVisionError.Type) -> PlateVisionSDK.PlateVisionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlateVisionError",
+                    "printedName": "PlateVisionSDK.PlateVisionError",
+                    "usr": "s:14PlateVisionSDK0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PlateVisionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionError",
+                        "printedName": "PlateVisionSDK.PlateVisionError",
+                        "usr": "s:14PlateVisionSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK0aB5ErrorO16unsupportedImageyA2CmF",
+            "mangledName": "$s14PlateVisionSDK0aB5ErrorO16unsupportedImageyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "frameProcessingFailed",
+            "printedName": "frameProcessingFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PlateVisionError.Type) -> (any Swift.Error) -> PlateVisionSDK.PlateVisionError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> PlateVisionSDK.PlateVisionError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionError",
+                        "printedName": "PlateVisionSDK.PlateVisionError",
+                        "usr": "s:14PlateVisionSDK0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PlateVisionError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionError",
+                        "printedName": "PlateVisionSDK.PlateVisionError",
+                        "usr": "s:14PlateVisionSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK0aB5ErrorO21frameProcessingFailedyACs0D0_pcACmF",
+            "mangledName": "$s14PlateVisionSDK0aB5ErrorO21frameProcessingFailedyACs0D0_pcACmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s14PlateVisionSDK0aB5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s14PlateVisionSDK0aB5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "PlateVisionSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14PlateVisionSDK0aB5ErrorO",
+        "mangledName": "$s14PlateVisionSDK0aB5ErrorO",
+        "moduleName": "PlateVisionSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlateVisionLicence",
+        "printedName": "PlateVisionLicence",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isValid",
+            "printedName": "isValid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7LicenceV7isValidSbvp",
+            "mangledName": "$s14PlateVisionSDK0aB7LicenceV7isValidSbvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7LicenceV7isValidSbvg",
+                "mangledName": "$s14PlateVisionSDK0aB7LicenceV7isValidSbvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appID",
+            "printedName": "appID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7LicenceV5appIDSSvp",
+            "mangledName": "$s14PlateVisionSDK0aB7LicenceV5appIDSSvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7LicenceV5appIDSSvg",
+                "mangledName": "$s14PlateVisionSDK0aB7LicenceV5appIDSSvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expiresAt",
+            "printedName": "expiresAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7LicenceV9expiresAt10Foundation4DateVSgvp",
+            "mangledName": "$s14PlateVisionSDK0aB7LicenceV9expiresAt10Foundation4DateVSgvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7LicenceV9expiresAt10Foundation4DateVSgvg",
+                "mangledName": "$s14PlateVisionSDK0aB7LicenceV9expiresAt10Foundation4DateVSgvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tier",
+            "printedName": "tier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlateVisionTier",
+                "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7LicenceV4tierAC0aB4TierOvp",
+            "mangledName": "$s14PlateVisionSDK0aB7LicenceV4tierAC0aB4TierOvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlateVisionTier",
+                    "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                    "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7LicenceV4tierAC0aB4TierOvg",
+                "mangledName": "$s14PlateVisionSDK0aB7LicenceV4tierAC0aB4TierOvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "PlateVisionTier",
+            "printedName": "PlateVisionTier",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "starter",
+                "printedName": "starter",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PlateVisionSDK.PlateVisionLicence.PlateVisionTier.Type) -> PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionTier",
+                        "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                        "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PlateVisionTier",
+                            "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                            "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO7starteryA2EmF",
+                "mangledName": "$s14PlateVisionSDK0aB7LicenceV0aB4TierO7starteryA2EmF",
+                "moduleName": "PlateVisionSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "pro",
+                "printedName": "pro",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PlateVisionSDK.PlateVisionLicence.PlateVisionTier.Type) -> PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionTier",
+                        "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                        "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PlateVisionTier",
+                            "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                            "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO3proyA2EmF",
+                "mangledName": "$s14PlateVisionSDK0aB7LicenceV0aB4TierO3proyA2EmF",
+                "moduleName": "PlateVisionSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "enterprise",
+                "printedName": "enterprise",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PlateVisionSDK.PlateVisionLicence.PlateVisionTier.Type) -> PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionTier",
+                        "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                        "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PlateVisionTier",
+                            "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                            "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO10enterpriseyA2EmF",
+                "mangledName": "$s14PlateVisionSDK0aB7LicenceV0aB4TierO10enterpriseyA2EmF",
+                "moduleName": "PlateVisionSDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionTier",
+                        "printedName": "PlateVisionSDK.PlateVisionLicence.PlateVisionTier",
+                        "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO8rawValueAESgSS_tcfc",
+                "mangledName": "$s14PlateVisionSDK0aB7LicenceV0aB4TierO8rawValueAESgSS_tcfc",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO8rawValueSSvp",
+                "mangledName": "$s14PlateVisionSDK0aB7LicenceV0aB4TierO8rawValueSSvp",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO8rawValueSSvg",
+                    "mangledName": "$s14PlateVisionSDK0aB7LicenceV0aB4TierO8rawValueSSvg",
+                    "moduleName": "PlateVisionSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:14PlateVisionSDK0aB7LicenceV0aB4TierO",
+            "mangledName": "$s14PlateVisionSDK0aB7LicenceV0aB4TierO",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14PlateVisionSDK0aB7LicenceV",
+        "mangledName": "$s14PlateVisionSDK0aB7LicenceV",
+        "moduleName": "PlateVisionSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PVDetectionResult",
+        "printedName": "PVDetectionResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "plateText",
+            "printedName": "plateText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK17PVDetectionResultV9plateTextSSvp",
+            "mangledName": "$s14PlateVisionSDK17PVDetectionResultV9plateTextSSvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK17PVDetectionResultV9plateTextSSvg",
+                "mangledName": "$s14PlateVisionSDK17PVDetectionResultV9plateTextSSvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confidence",
+            "printedName": "confidence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK17PVDetectionResultV10confidenceSfvp",
+            "mangledName": "$s14PlateVisionSDK17PVDetectionResultV10confidenceSfvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK17PVDetectionResultV10confidenceSfvg",
+                "mangledName": "$s14PlateVisionSDK17PVDetectionResultV10confidenceSfvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "boundingBox",
+            "printedName": "boundingBox",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK17PVDetectionResultV11boundingBoxSo6CGRectVvp",
+            "mangledName": "$s14PlateVisionSDK17PVDetectionResultV11boundingBoxSo6CGRectVvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK17PVDetectionResultV11boundingBoxSo6CGRectVvg",
+                "mangledName": "$s14PlateVisionSDK17PVDetectionResultV11boundingBoxSo6CGRectVvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK17PVDetectionResultV9timestamp10Foundation4DateVvp",
+            "mangledName": "$s14PlateVisionSDK17PVDetectionResultV9timestamp10Foundation4DateVvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK17PVDetectionResultV9timestamp10Foundation4DateVvg",
+                "mangledName": "$s14PlateVisionSDK17PVDetectionResultV9timestamp10Foundation4DateVvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "region",
+            "printedName": "region",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PVRegion",
+                "printedName": "PlateVisionSDK.PVRegion",
+                "usr": "s:14PlateVisionSDK8PVRegionO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK17PVDetectionResultV6regionAA8PVRegionOvp",
+            "mangledName": "$s14PlateVisionSDK17PVDetectionResultV6regionAA8PVRegionOvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK17PVDetectionResultV6regionAA8PVRegionOvg",
+                "mangledName": "$s14PlateVisionSDK17PVDetectionResultV6regionAA8PVRegionOvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confidencePercent",
+            "printedName": "confidencePercent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK17PVDetectionResultV17confidencePercentSivp",
+            "mangledName": "$s14PlateVisionSDK17PVDetectionResultV17confidencePercentSivp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK17PVDetectionResultV17confidencePercentSivg",
+                "mangledName": "$s14PlateVisionSDK17PVDetectionResultV17confidencePercentSivg",
+                "moduleName": "PlateVisionSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14PlateVisionSDK17PVDetectionResultV",
+        "mangledName": "$s14PlateVisionSDK17PVDetectionResultV",
+        "moduleName": "PlateVisionSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PVRegion",
+        "printedName": "PVRegion",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PlateVisionSDK.PVRegion]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK8PVRegionO8allCasesSayACGvpZ",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO8allCasesSayACGvpZ",
+            "moduleName": "PlateVisionSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PlateVisionSDK.PVRegion]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVRegion",
+                        "printedName": "PlateVisionSDK.PVRegion",
+                        "usr": "s:14PlateVisionSDK8PVRegionO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK8PVRegionO8allCasesSayACGvgZ",
+                "mangledName": "$s14PlateVisionSDK8PVRegionO8allCasesSayACGvgZ",
+                "moduleName": "PlateVisionSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "auto",
+            "printedName": "auto",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVRegion.Type) -> PlateVisionSDK.PVRegion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVRegion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVRegion",
+                        "printedName": "PlateVisionSDK.PVRegion",
+                        "usr": "s:14PlateVisionSDK8PVRegionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK8PVRegionO4autoyA2CmF",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO4autoyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "us",
+            "printedName": "us",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVRegion.Type) -> PlateVisionSDK.PVRegion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVRegion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVRegion",
+                        "printedName": "PlateVisionSDK.PVRegion",
+                        "usr": "s:14PlateVisionSDK8PVRegionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK8PVRegionO2usyA2CmF",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO2usyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "ireland",
+            "printedName": "ireland",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVRegion.Type) -> PlateVisionSDK.PVRegion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVRegion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVRegion",
+                        "printedName": "PlateVisionSDK.PVRegion",
+                        "usr": "s:14PlateVisionSDK8PVRegionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK8PVRegionO7irelandyA2CmF",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO7irelandyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "europe",
+            "printedName": "europe",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVRegion.Type) -> PlateVisionSDK.PVRegion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVRegion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVRegion",
+                        "printedName": "PlateVisionSDK.PVRegion",
+                        "usr": "s:14PlateVisionSDK8PVRegionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK8PVRegionO6europeyA2CmF",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO6europeyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "uk",
+            "printedName": "uk",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVRegion.Type) -> PlateVisionSDK.PVRegion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVRegion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVRegion",
+                        "printedName": "PlateVisionSDK.PVRegion",
+                        "usr": "s:14PlateVisionSDK8PVRegionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK8PVRegionO2ukyA2CmF",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO2ukyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "australia",
+            "printedName": "australia",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVRegion.Type) -> PlateVisionSDK.PVRegion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVRegion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVRegion",
+                        "printedName": "PlateVisionSDK.PVRegion",
+                        "usr": "s:14PlateVisionSDK8PVRegionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK8PVRegionO9australiayA2CmF",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO9australiayA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "india",
+            "printedName": "india",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVRegion.Type) -> PlateVisionSDK.PVRegion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVRegion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVRegion",
+                        "printedName": "PlateVisionSDK.PVRegion",
+                        "usr": "s:14PlateVisionSDK8PVRegionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK8PVRegionO5indiayA2CmF",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO5indiayA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "middleEast",
+            "printedName": "middleEast",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVRegion.Type) -> PlateVisionSDK.PVRegion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVRegion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVRegion",
+                        "printedName": "PlateVisionSDK.PVRegion",
+                        "usr": "s:14PlateVisionSDK8PVRegionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK8PVRegionO10middleEastyA2CmF",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO10middleEastyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "minLength",
+            "printedName": "minLength",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK8PVRegionO9minLengthSivp",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO9minLengthSivp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK8PVRegionO9minLengthSivg",
+                "mangledName": "$s14PlateVisionSDK8PVRegionO9minLengthSivg",
+                "moduleName": "PlateVisionSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxLength",
+            "printedName": "maxLength",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK8PVRegionO9maxLengthSivp",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO9maxLengthSivp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK8PVRegionO9maxLengthSivg",
+                "mangledName": "$s14PlateVisionSDK8PVRegionO9maxLengthSivg",
+                "moduleName": "PlateVisionSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "regexPattern",
+            "printedName": "regexPattern",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK8PVRegionO12regexPatternSSSgvp",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO12regexPatternSSSgvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK8PVRegionO12regexPatternSSSgvg",
+                "mangledName": "$s14PlateVisionSDK8PVRegionO12regexPatternSSSgvg",
+                "moduleName": "PlateVisionSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "correctOCR",
+            "printedName": "correctOCR(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK8PVRegionO10correctOCRyS2SF",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO10correctOCRyS2SF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PlateVisionSDK.PVRegion?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PlateVisionSDK8PVRegionO8rawValueACSgSS_tcfc",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO8rawValueACSgSS_tcfc",
+            "moduleName": "PlateVisionSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK8PVRegionO8rawValueSSvp",
+            "mangledName": "$s14PlateVisionSDK8PVRegionO8rawValueSSvp",
+            "moduleName": "PlateVisionSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK8PVRegionO8rawValueSSvg",
+                "mangledName": "$s14PlateVisionSDK8PVRegionO8rawValueSSvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14PlateVisionSDK8PVRegionO",
+        "mangledName": "$s14PlateVisionSDK8PVRegionO",
+        "moduleName": "PlateVisionSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PVConfiguration",
+        "printedName": "PVConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "region",
+            "printedName": "region",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PVRegion",
+                "printedName": "PlateVisionSDK.PVRegion",
+                "usr": "s:14PlateVisionSDK8PVRegionO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK15PVConfigurationV6regionAA8PVRegionOvp",
+            "mangledName": "$s14PlateVisionSDK15PVConfigurationV6regionAA8PVRegionOvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV6regionAA8PVRegionOvg",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV6regionAA8PVRegionOvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVRegion",
+                    "printedName": "PlateVisionSDK.PVRegion",
+                    "usr": "s:14PlateVisionSDK8PVRegionO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV6regionAA8PVRegionOvs",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV6regionAA8PVRegionOvs",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV6regionAA8PVRegionOvM",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV6regionAA8PVRegionOvM",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minimumConfidence",
+            "printedName": "minimumConfidence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK15PVConfigurationV17minimumConfidenceSfvp",
+            "mangledName": "$s14PlateVisionSDK15PVConfigurationV17minimumConfidenceSfvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV17minimumConfidenceSfvg",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV17minimumConfidenceSfvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV17minimumConfidenceSfvs",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV17minimumConfidenceSfvs",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV17minimumConfidenceSfvM",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV17minimumConfidenceSfvM",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deduplicationWindow",
+            "printedName": "deduplicationWindow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK15PVConfigurationV19deduplicationWindowSdvp",
+            "mangledName": "$s14PlateVisionSDK15PVConfigurationV19deduplicationWindowSdvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV19deduplicationWindowSdvg",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV19deduplicationWindowSdvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV19deduplicationWindowSdvs",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV19deduplicationWindowSdvs",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV19deduplicationWindowSdvM",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV19deduplicationWindowSdvM",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enableSound",
+            "printedName": "enableSound",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK15PVConfigurationV11enableSoundSbvp",
+            "mangledName": "$s14PlateVisionSDK15PVConfigurationV11enableSoundSbvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV11enableSoundSbvg",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV11enableSoundSbvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV11enableSoundSbvs",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV11enableSoundSbvs",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV11enableSoundSbvM",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV11enableSoundSbvM",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scanROI",
+            "printedName": "scanROI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK15PVConfigurationV7scanROISo6CGRectVvp",
+            "mangledName": "$s14PlateVisionSDK15PVConfigurationV7scanROISo6CGRectVvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV7scanROISo6CGRectVvg",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV7scanROISo6CGRectVvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV7scanROISo6CGRectVvs",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV7scanROISo6CGRectVvs",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV7scanROISo6CGRectVvM",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV7scanROISo6CGRectVvM",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PVConfiguration",
+                "printedName": "PlateVisionSDK.PVConfiguration",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PlateVisionSDK15PVConfigurationVACycfc",
+            "mangledName": "$s14PlateVisionSDK15PVConfigurationVACycfc",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PVConfiguration",
+                "printedName": "PlateVisionSDK.PVConfiguration",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK15PVConfigurationV7defaultACvpZ",
+            "mangledName": "$s14PlateVisionSDK15PVConfigurationV7defaultACvpZ",
+            "moduleName": "PlateVisionSDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVConfiguration",
+                    "printedName": "PlateVisionSDK.PVConfiguration",
+                    "usr": "s:14PlateVisionSDK15PVConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV7defaultACvgZ",
+                "mangledName": "$s14PlateVisionSDK15PVConfigurationV7defaultACvgZ",
+                "moduleName": "PlateVisionSDK",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14PlateVisionSDK15PVConfigurationV",
+        "mangledName": "$s14PlateVisionSDK15PVConfigurationV",
+        "moduleName": "PlateVisionSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlateVisionDelegate",
+        "printedName": "PlateVisionDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "plateVision",
+            "printedName": "plateVision(_:didDetect:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlateVisionScanner",
+                "printedName": "PlateVisionSDK.PlateVisionScanner",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PVDetectionResult",
+                "printedName": "PlateVisionSDK.PVDetectionResult",
+                "usr": "s:14PlateVisionSDK17PVDetectionResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB8DelegateP05plateB0_9didDetectyAA0aB7ScannerC_AA17PVDetectionResultVtF",
+            "mangledName": "$s14PlateVisionSDK0aB8DelegateP05plateB0_9didDetectyAA0aB7ScannerC_AA17PVDetectionResultVtF",
+            "moduleName": "PlateVisionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PlateVisionSDK.PlateVisionDelegate>",
+            "sugared_genericSig": "<Self where Self : PlateVisionSDK.PlateVisionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "plateVision",
+            "printedName": "plateVision(_:didChangeState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlateVisionScanner",
+                "printedName": "PlateVisionSDK.PlateVisionScanner",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PVState",
+                "printedName": "PlateVisionSDK.PVState",
+                "usr": "s:14PlateVisionSDK7PVStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB8DelegateP05plateB0_14didChangeStateyAA0aB7ScannerC_AA7PVStateOtF",
+            "mangledName": "$s14PlateVisionSDK0aB8DelegateP05plateB0_14didChangeStateyAA0aB7ScannerC_AA7PVStateOtF",
+            "moduleName": "PlateVisionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PlateVisionSDK.PlateVisionDelegate>",
+            "sugared_genericSig": "<Self where Self : PlateVisionSDK.PlateVisionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "plateVisionDidFailLicence",
+            "printedName": "plateVisionDidFailLicence(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlateVisionScanner",
+                "printedName": "PlateVisionSDK.PlateVisionScanner",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB8DelegateP05plateB14DidFailLicenceyyAA0aB7ScannerCF",
+            "mangledName": "$s14PlateVisionSDK0aB8DelegateP05plateB14DidFailLicenceyyAA0aB7ScannerCF",
+            "moduleName": "PlateVisionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PlateVisionSDK.PlateVisionDelegate>",
+            "sugared_genericSig": "<Self where Self : PlateVisionSDK.PlateVisionDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "plateVision",
+            "printedName": "plateVision(_:didChangeState:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlateVisionScanner",
+                "printedName": "PlateVisionSDK.PlateVisionScanner",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PVState",
+                "printedName": "PlateVisionSDK.PVState",
+                "usr": "s:14PlateVisionSDK7PVStateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB8DelegatePAAE05plateB0_14didChangeStateyAA0aB7ScannerC_AA7PVStateOtF",
+            "mangledName": "$s14PlateVisionSDK0aB8DelegatePAAE05plateB0_14didChangeStateyAA0aB7ScannerC_AA7PVStateOtF",
+            "moduleName": "PlateVisionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PlateVisionSDK.PlateVisionDelegate>",
+            "sugared_genericSig": "<Self where Self : PlateVisionSDK.PlateVisionDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "plateVisionDidFailLicence",
+            "printedName": "plateVisionDidFailLicence(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlateVisionScanner",
+                "printedName": "PlateVisionSDK.PlateVisionScanner",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB8DelegatePAAE05plateB14DidFailLicenceyyAA0aB7ScannerCF",
+            "mangledName": "$s14PlateVisionSDK0aB8DelegatePAAE05plateB14DidFailLicenceyyAA0aB7ScannerCF",
+            "moduleName": "PlateVisionSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PlateVisionSDK.PlateVisionDelegate>",
+            "sugared_genericSig": "<Self where Self : PlateVisionSDK.PlateVisionDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:14PlateVisionSDK0aB8DelegateP",
+        "mangledName": "$s14PlateVisionSDK0aB8DelegateP",
+        "moduleName": "PlateVisionSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PVState",
+        "printedName": "PVState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "idle",
+            "printedName": "idle",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVState.Type) -> PlateVisionSDK.PVState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVState",
+                    "printedName": "PlateVisionSDK.PVState",
+                    "usr": "s:14PlateVisionSDK7PVStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVState",
+                        "printedName": "PlateVisionSDK.PVState",
+                        "usr": "s:14PlateVisionSDK7PVStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK7PVStateO4idleyA2CmF",
+            "mangledName": "$s14PlateVisionSDK7PVStateO4idleyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "running",
+            "printedName": "running",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVState.Type) -> PlateVisionSDK.PVState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVState",
+                    "printedName": "PlateVisionSDK.PVState",
+                    "usr": "s:14PlateVisionSDK7PVStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVState",
+                        "printedName": "PlateVisionSDK.PVState",
+                        "usr": "s:14PlateVisionSDK7PVStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK7PVStateO7runningyA2CmF",
+            "mangledName": "$s14PlateVisionSDK7PVStateO7runningyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "paused",
+            "printedName": "paused",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVState.Type) -> PlateVisionSDK.PVState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVState",
+                    "printedName": "PlateVisionSDK.PVState",
+                    "usr": "s:14PlateVisionSDK7PVStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVState",
+                        "printedName": "PlateVisionSDK.PVState",
+                        "usr": "s:14PlateVisionSDK7PVStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK7PVStateO6pausedyA2CmF",
+            "mangledName": "$s14PlateVisionSDK7PVStateO6pausedyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "permissionDenied",
+            "printedName": "permissionDenied",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVState.Type) -> PlateVisionSDK.PVState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVState",
+                    "printedName": "PlateVisionSDK.PVState",
+                    "usr": "s:14PlateVisionSDK7PVStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVState",
+                        "printedName": "PlateVisionSDK.PVState",
+                        "usr": "s:14PlateVisionSDK7PVStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK7PVStateO16permissionDeniedyA2CmF",
+            "mangledName": "$s14PlateVisionSDK7PVStateO16permissionDeniedyA2CmF",
+            "moduleName": "PlateVisionSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlateVisionSDK.PVState.Type) -> (Swift.String) -> PlateVisionSDK.PVState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> PlateVisionSDK.PVState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVState",
+                        "printedName": "PlateVisionSDK.PVState",
+                        "usr": "s:14PlateVisionSDK7PVStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlateVisionSDK.PVState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PVState",
+                        "printedName": "PlateVisionSDK.PVState",
+                        "usr": "s:14PlateVisionSDK7PVStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlateVisionSDK7PVStateO5erroryACSScACmF",
+            "mangledName": "$s14PlateVisionSDK7PVStateO5erroryACSScACmF",
+            "moduleName": "PlateVisionSDK"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:14PlateVisionSDK7PVStateO",
+        "mangledName": "$s14PlateVisionSDK7PVStateO",
+        "moduleName": "PlateVisionSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlateVisionScanner",
+        "printedName": "PlateVisionScanner",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlateVisionScanner",
+                "printedName": "PlateVisionSDK.PlateVisionScanner",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC6sharedACvpZ",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC6sharedACvpZ",
+            "moduleName": "PlateVisionSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlateVisionScanner",
+                    "printedName": "PlateVisionSDK.PlateVisionScanner",
+                    "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC6sharedACvgZ",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC6sharedACvgZ",
+                "moduleName": "PlateVisionSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any PlateVisionSDK.PlateVisionDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC8delegateAA0aB8Delegate_pSgvp",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC8delegateAA0aB8Delegate_pSgvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any PlateVisionSDK.PlateVisionDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionDelegate",
+                        "printedName": "any PlateVisionSDK.PlateVisionDelegate",
+                        "usr": "s:14PlateVisionSDK0aB8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC8delegateAA0aB8Delegate_pSgvg",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC8delegateAA0aB8Delegate_pSgvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any PlateVisionSDK.PlateVisionDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionDelegate",
+                        "printedName": "any PlateVisionSDK.PlateVisionDelegate",
+                        "usr": "s:14PlateVisionSDK0aB8DelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC8delegateAA0aB8Delegate_pSgvs",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC8delegateAA0aB8Delegate_pSgvs",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC8delegateAA0aB8Delegate_pSgvM",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC8delegateAA0aB8Delegate_pSgvM",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "configuration",
+            "printedName": "configuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PVConfiguration",
+                "printedName": "PlateVisionSDK.PVConfiguration",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC13configurationAA15PVConfigurationVvp",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC13configurationAA15PVConfigurationVvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVConfiguration",
+                    "printedName": "PlateVisionSDK.PVConfiguration",
+                    "usr": "s:14PlateVisionSDK15PVConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC13configurationAA15PVConfigurationVvg",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC13configurationAA15PVConfigurationVvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PVState",
+                "printedName": "PlateVisionSDK.PVState",
+                "usr": "s:14PlateVisionSDK7PVStateO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC5stateAA7PVStateOvp",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC5stateAA7PVStateOvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVState",
+                    "printedName": "PlateVisionSDK.PVState",
+                    "usr": "s:14PlateVisionSDK7PVStateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC5stateAA7PVStateOvg",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC5stateAA7PVStateOvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "previewLayer",
+            "printedName": "previewLayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVCaptureVideoPreviewLayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVCaptureVideoPreviewLayer",
+                    "printedName": "AVFoundation.AVCaptureVideoPreviewLayer",
+                    "usr": "c:objc(cs)AVCaptureVideoPreviewLayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC12previewLayerSo021AVCaptureVideoPreviewF0CSgvp",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC12previewLayerSo021AVCaptureVideoPreviewF0CSgvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVCaptureVideoPreviewLayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVCaptureVideoPreviewLayer",
+                        "printedName": "AVFoundation.AVCaptureVideoPreviewLayer",
+                        "usr": "c:objc(cs)AVCaptureVideoPreviewLayer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC12previewLayerSo021AVCaptureVideoPreviewF0CSgvg",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC12previewLayerSo021AVCaptureVideoPreviewF0CSgvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "licenceInfo",
+            "printedName": "licenceInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PlateVisionSDK.PlateVisionLicence?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlateVisionLicence",
+                    "printedName": "PlateVisionSDK.PlateVisionLicence",
+                    "usr": "s:14PlateVisionSDK0aB7LicenceV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC11licenceInfoAA0aB7LicenceVSgvp",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC11licenceInfoAA0aB7LicenceVSgvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PlateVisionSDK.PlateVisionLicence?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionLicence",
+                        "printedName": "PlateVisionSDK.PlateVisionLicence",
+                        "usr": "s:14PlateVisionSDK0aB7LicenceV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC11licenceInfoAA0aB7LicenceVSgvg",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC11licenceInfoAA0aB7LicenceVSgvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "licenceValidationURL",
+            "printedName": "licenceValidationURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC20licenceValidationURL10Foundation0G0Vvp",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC20licenceValidationURL10Foundation0G0Vvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC20licenceValidationURL10Foundation0G0Vvg",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC20licenceValidationURL10Foundation0G0Vvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC20licenceValidationURL10Foundation0G0Vvs",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC20licenceValidationURL10Foundation0G0Vvs",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK0aB7ScannerC20licenceValidationURL10Foundation0G0VvM",
+                "mangledName": "$s14PlateVisionSDK0aB7ScannerC20licenceValidationURL10Foundation0G0VvM",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlateVisionScanner",
+                "printedName": "PlateVisionSDK.PlateVisionScanner",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner(im)init",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerCACycfc",
+            "moduleName": "PlateVisionSDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "activate",
+            "printedName": "activate(apiKey:secretKey:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<PlateVisionSDK.PlateVisionLicence, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<PlateVisionSDK.PlateVisionLicence, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PlateVisionLicence",
+                        "printedName": "PlateVisionSDK.PlateVisionLicence",
+                        "usr": "s:14PlateVisionSDK0aB7LicenceV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC8activate6apiKey06secretG010completionySS_SSys6ResultOyAA0aB7LicenceVs5Error_pGctF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC8activate6apiKey06secretG010completionySS_SSys6ResultOyAA0aB7LicenceVs5Error_pGctF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PVConfiguration",
+                "printedName": "PlateVisionSDK.PVConfiguration",
+                "usr": "s:14PlateVisionSDK15PVConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC9configureyyAA15PVConfigurationVF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC9configureyyAA15PVConfigurationVF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "process",
+            "printedName": "process(pixelBuffer:orientation:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CVBuffer",
+                "printedName": "CoreVideo.CVBuffer",
+                "usr": "c:@T@CVBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGImagePropertyOrientation",
+                "printedName": "ImageIO.CGImagePropertyOrientation",
+                "hasDefaultArg": true,
+                "usr": "c:@E@CGImagePropertyOrientation"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PlateVisionSDK.PVDetectionResult]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PVDetectionResult",
+                            "printedName": "PlateVisionSDK.PVDetectionResult",
+                            "usr": "s:14PlateVisionSDK17PVDetectionResultV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC7process11pixelBuffer11orientation10completionySo11CVBufferRefa_So26CGImagePropertyOrientationVys6ResultOySayAA011PVDetectionO0VGs5Error_pGctF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC7process11pixelBuffer11orientation10completionySo11CVBufferRefa_So26CGImagePropertyOrientationVys6ResultOySayAA011PVDetectionO0VGs5Error_pGctF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "process",
+            "printedName": "process(sampleBuffer:orientation:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGImagePropertyOrientation",
+                "printedName": "ImageIO.CGImagePropertyOrientation",
+                "hasDefaultArg": true,
+                "usr": "c:@E@CGImagePropertyOrientation"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PlateVisionSDK.PVDetectionResult]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PVDetectionResult",
+                            "printedName": "PlateVisionSDK.PVDetectionResult",
+                            "usr": "s:14PlateVisionSDK17PVDetectionResultV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC7process12sampleBuffer11orientation10completionySo08CMSampleG3Refa_So26CGImagePropertyOrientationVys6ResultOySayAA011PVDetectionO0VGs5Error_pGctF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC7process12sampleBuffer11orientation10completionySo08CMSampleG3Refa_So26CGImagePropertyOrientationVys6ResultOySayAA011PVDetectionO0VGs5Error_pGctF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "process",
+            "printedName": "process(cgImage:orientation:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGImage",
+                "printedName": "CoreGraphics.CGImage",
+                "usr": "c:@T@CGImageRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGImagePropertyOrientation",
+                "printedName": "ImageIO.CGImagePropertyOrientation",
+                "hasDefaultArg": true,
+                "usr": "c:@E@CGImagePropertyOrientation"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PlateVisionSDK.PVDetectionResult]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PVDetectionResult",
+                            "printedName": "PlateVisionSDK.PVDetectionResult",
+                            "usr": "s:14PlateVisionSDK17PVDetectionResultV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC7process7cgImage11orientation10completionySo10CGImageRefa_So0J19PropertyOrientationVys6ResultOySayAA011PVDetectionN0VGs5Error_pGctF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC7process7cgImage11orientation10completionySo10CGImageRefa_So0J19PropertyOrientationVys6ResultOySayAA011PVDetectionN0VGs5Error_pGctF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "process",
+            "printedName": "process(image:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIImage",
+                "printedName": "UIKit.UIImage",
+                "usr": "c:objc(cs)UIImage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PlateVisionSDK.PVDetectionResult]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PVDetectionResult",
+                            "printedName": "PlateVisionSDK.PVDetectionResult",
+                            "usr": "s:14PlateVisionSDK17PVDetectionResultV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC7process5image10completionySo7UIImageC_ys6ResultOySayAA011PVDetectionI0VGs5Error_pGctF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC7process5image10completionySo7UIImageC_ys6ResultOySayAA011PVDetectionI0VGs5Error_pGctF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startScanning",
+            "printedName": "startScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC13startScanningyyF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC13startScanningyyF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScanning",
+            "printedName": "stopScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC12stopScanningyyF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC12stopScanningyyF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pause",
+            "printedName": "pause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC5pauseyyF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC5pauseyyF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resume",
+            "printedName": "resume()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC6resumeyyF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC6resumeyyF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "captureOnce",
+            "printedName": "captureOnce()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC11captureOnceyyF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC11captureOnceyyF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "captureStillImage",
+            "printedName": "captureStillImage(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIImage?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK0aB7ScannerC17captureStillImage10completionyySo7UIImageCSgc_tF",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC17captureStillImage10completionyySo7UIImageCSgc_tF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "captureOutput",
+            "printedName": "captureOutput(_:didOutput:from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureOutput",
+                "printedName": "AVFoundation.AVCaptureOutput",
+                "usr": "c:objc(cs)AVCaptureOutput"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CMSampleBuffer",
+                "printedName": "CoreMedia.CMSampleBuffer",
+                "usr": "c:@T@CMSampleBufferRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureConnection",
+                "printedName": "AVFoundation.AVCaptureConnection",
+                "usr": "c:objc(cs)AVCaptureConnection"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PlateVisionSDK@objc(cs)PlateVisionScanner(im)captureOutput:didOutputSampleBuffer:fromConnection:",
+            "mangledName": "$s14PlateVisionSDK0aB7ScannerC13captureOutput_03didF04fromySo09AVCaptureF0C_So17CMSampleBufferRefaSo0I10ConnectionCtF",
+            "moduleName": "PlateVisionSDK",
+            "objc_name": "captureOutput:didOutputSampleBuffer:fromConnection:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner",
+        "mangledName": "$s14PlateVisionSDK0aB7ScannerC",
+        "moduleName": "PlateVisionSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PVPreviewView",
+        "printedName": "PVPreviewView",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PlateVisionSDK@objc(cs)PVPreviewView(im)layoutSubviews",
+            "mangledName": "$s14PlateVisionSDK13PVPreviewViewC14layoutSubviewsyyF",
+            "moduleName": "PlateVisionSDK",
+            "overriding": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLayer",
+            "printedName": "setLayer(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVCaptureVideoPreviewLayer",
+                "printedName": "AVFoundation.AVCaptureVideoPreviewLayer",
+                "usr": "c:objc(cs)AVCaptureVideoPreviewLayer"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK13PVPreviewViewC8setLayeryySo021AVCaptureVideoPreviewG0CF",
+            "mangledName": "$s14PlateVisionSDK13PVPreviewViewC8setLayeryySo021AVCaptureVideoPreviewG0CF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PVPreviewView",
+                "printedName": "PlateVisionSDK.PVPreviewView",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PVPreviewView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PlateVisionSDK@objc(cs)PVPreviewView(im)initWithFrame:",
+            "mangledName": "$s14PlateVisionSDK13PVPreviewViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "PlateVisionSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PlateVisionSDK.PVPreviewView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVPreviewView",
+                    "printedName": "PlateVisionSDK.PVPreviewView",
+                    "usr": "c:@M@PlateVisionSDK@objc(cs)PVPreviewView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PlateVisionSDK@objc(cs)PVPreviewView(im)initWithCoder:",
+            "mangledName": "$s14PlateVisionSDK13PVPreviewViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "PlateVisionSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PlateVisionSDK@objc(cs)PVPreviewView",
+        "mangledName": "$s14PlateVisionSDK13PVPreviewViewC",
+        "moduleName": "PlateVisionSDK",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "Final",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PlateVisionSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PVCameraPreview",
+        "printedName": "PVCameraPreview",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdk",
+            "printedName": "sdk",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlateVisionScanner",
+                "printedName": "PlateVisionSDK.PlateVisionScanner",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:14PlateVisionSDK15PVCameraPreviewV3sdkAA0aB7ScannerCvp",
+            "mangledName": "$s14PlateVisionSDK15PVCameraPreviewV3sdkAA0aB7ScannerCvp",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlateVisionScanner",
+                    "printedName": "PlateVisionSDK.PlateVisionScanner",
+                    "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:14PlateVisionSDK15PVCameraPreviewV3sdkAA0aB7ScannerCvg",
+                "mangledName": "$s14PlateVisionSDK15PVCameraPreviewV3sdkAA0aB7ScannerCvg",
+                "moduleName": "PlateVisionSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sdk:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PVCameraPreview",
+                "printedName": "PlateVisionSDK.PVCameraPreview",
+                "usr": "s:14PlateVisionSDK15PVCameraPreviewV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlateVisionScanner",
+                "printedName": "PlateVisionSDK.PlateVisionScanner",
+                "hasDefaultArg": true,
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PlateVisionScanner"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PlateVisionSDK15PVCameraPreviewV3sdkAcA0aB7ScannerC_tcfc",
+            "mangledName": "$s14PlateVisionSDK15PVCameraPreviewV3sdkAcA0aB7ScannerC_tcfc",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "makeUIView",
+            "printedName": "makeUIView(context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PVPreviewView",
+                "printedName": "PlateVisionSDK.PVPreviewView",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PVPreviewView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewRepresentableContext",
+                "printedName": "SwiftUI.UIViewRepresentableContext<PlateVisionSDK.PVCameraPreview>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVCameraPreview",
+                    "printedName": "PlateVisionSDK.PVCameraPreview",
+                    "usr": "s:14PlateVisionSDK15PVCameraPreviewV"
+                  }
+                ],
+                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK15PVCameraPreviewV10makeUIView7contextAA13PVPreviewViewC7SwiftUI0G20RepresentableContextVyACG_tF",
+            "mangledName": "$s14PlateVisionSDK15PVCameraPreviewV10makeUIView7contextAA13PVPreviewViewC7SwiftUI0G20RepresentableContextVyACG_tF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateUIView",
+            "printedName": "updateUIView(_:context:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PVPreviewView",
+                "printedName": "PlateVisionSDK.PVPreviewView",
+                "usr": "c:@M@PlateVisionSDK@objc(cs)PVPreviewView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewRepresentableContext",
+                "printedName": "SwiftUI.UIViewRepresentableContext<PlateVisionSDK.PVCameraPreview>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVCameraPreview",
+                    "printedName": "PlateVisionSDK.PVCameraPreview",
+                    "usr": "s:14PlateVisionSDK15PVCameraPreviewV"
+                  }
+                ],
+                "usr": "s:7SwiftUI26UIViewRepresentableContextV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14PlateVisionSDK15PVCameraPreviewV12updateUIView_7contextyAA13PVPreviewViewC_7SwiftUI0G20RepresentableContextVyACGtF",
+            "mangledName": "$s14PlateVisionSDK15PVCameraPreviewV12updateUIView_7contextyAA13PVPreviewViewC_7SwiftUI0G20RepresentableContextVyACGtF",
+            "moduleName": "PlateVisionSDK",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:14PlateVisionSDK15PVCameraPreviewV",
+        "mangledName": "$s14PlateVisionSDK15PVCameraPreviewV",
+        "moduleName": "PlateVisionSDK",
+        "intro_iOS": "16.0",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "Available"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UIViewRepresentable",
+            "printedName": "UIViewRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "UIViewType",
+                "printedName": "UIViewType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PVPreviewView",
+                    "printedName": "PlateVisionSDK.PVPreviewView",
+                    "usr": "c:@M@PlateVisionSDK@objc(cs)PVPreviewView"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Coordinator",
+                "printedName": "Coordinator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI19UIViewRepresentableP",
+            "mangledName": "$s7SwiftUI19UIViewRepresentableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 7,
+      "value": "\"1.1.0\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1270,
+      "length": 9,
+      "value": "\"starter\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1304,
+      "length": 5,
+      "value": "\"pro\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1336,
+      "length": 12,
+      "value": "\"enterprise\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1935,
+      "length": 6,
+      "value": "\"auto\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1964,
+      "length": 4,
+      "value": "\"us\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1991,
+      "length": 9,
+      "value": "\"ireland\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2023,
+      "length": 8,
+      "value": "\"europe\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2054,
+      "length": 4,
+      "value": "\"uk\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2081,
+      "length": 11,
+      "value": "\"australia\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2115,
+      "length": 7,
+      "value": "\"india\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 2145,
+      "length": 13,
+      "value": "\"middle_east\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "Array",
+      "offset": 2644,
+      "length": 181,
+      "value": "[\"C\", \"CE\", \"CN\", \"CW\", \"D\", \"DL\", \"G\", \"KE\", \"KK\", \"KY\", \"L\", \"LD\", \"LH\", \"LK\", \"LM\", \"LS\", \"MH\", \"MN\", \"MO\", \"N\", \"OY\", \"RN\", \"SO\", \"T\", \"TN\", \"TS\", \"W\", \"WD\", \"WH\", \"WW\", \"WX\"]"
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 7300,
+      "length": 4,
+      "value": "0.60"
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 7360,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7419,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 7489,
+      "length": 4,
+      "value": "0.07"
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 7498,
+      "length": 4,
+      "value": "0.40"
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 7511,
+      "length": 4,
+      "value": "0.86"
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "FloatLiteral",
+      "offset": 7525,
+      "length": 4,
+      "value": "0.20"
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 8858,
+      "length": 54,
+      "value": "\"https:\/\/platevision.example\/api\/validate-licence.php\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9106,
+      "length": 29,
+      "value": "\"com.platevision.sdk.session\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 9218,
+      "length": 32,
+      "value": "\"com.platevision.sdk.processing\""
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "Dictionary",
+      "offset": 9379,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9421,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/tmp\/platevision-sanitized.TSU3Xy\/Framework\/PlateVisionSDK\/Sources\/PlateVisionSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9460,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

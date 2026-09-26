@@ -1,0 +1,184 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PlateVisionSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import AVFoundation
+import AudioToolbox
+import CoreImage
+import ImageIO
+import Swift
+import SwiftUI
+import UIKit
+import Vision
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public let PlateVisionSDKVersion: Swift.String
+public enum PlateVisionError : Foundation.LocalizedError {
+  case licenceNotActivated
+  case invalidSampleBuffer
+  case unsupportedImage
+  case frameProcessingFailed(any Swift.Error)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+public struct PlateVisionLicence {
+  public let isValid: Swift.Bool
+  public let appID: Swift.String
+  public let expiresAt: Foundation.Date?
+  public let tier: PlateVisionSDK.PlateVisionLicence.PlateVisionTier
+  public enum PlateVisionTier : Swift.String {
+    case starter
+    case pro
+    case enterprise
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public struct PVDetectionResult {
+  public let plateText: Swift.String
+  public let confidence: Swift.Float
+  public let boundingBox: CoreFoundation.CGRect
+  public let timestamp: Foundation.Date
+  public let region: PlateVisionSDK.PVRegion
+  public var confidencePercent: Swift.Int {
+    get
+  }
+}
+public enum PVRegion : Swift.String {
+  public static let allCases: [PlateVisionSDK.PVRegion]
+  case auto
+  case us
+  case ireland
+  case europe
+  case uk
+  case australia
+  case india
+  case middleEast
+  public var minLength: Swift.Int {
+    get
+  }
+  public var maxLength: Swift.Int {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var regexPattern: Swift.String? {
+    get
+  }
+  #endif
+  public func correctOCR(_ plate: Swift.String) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PVConfiguration {
+  public var region: PlateVisionSDK.PVRegion
+  public var minimumConfidence: Swift.Float
+  public var deduplicationWindow: Swift.Double
+  public var enableSound: Swift.Bool
+  public var scanROI: CoreFoundation.CGRect
+  public init()
+  public static var `default`: PlateVisionSDK.PVConfiguration {
+    get
+  }
+}
+public protocol PlateVisionDelegate : AnyObject {
+  func plateVision(_ sdk: PlateVisionSDK.PlateVisionScanner, didDetect result: PlateVisionSDK.PVDetectionResult)
+  func plateVision(_ sdk: PlateVisionSDK.PlateVisionScanner, didChangeState state: PlateVisionSDK.PVState)
+  func plateVisionDidFailLicence(_ sdk: PlateVisionSDK.PlateVisionScanner)
+}
+extension PlateVisionSDK.PlateVisionDelegate {
+  public func plateVision(_ sdk: PlateVisionSDK.PlateVisionScanner, didChangeState state: PlateVisionSDK.PVState)
+  public func plateVisionDidFailLicence(_ sdk: PlateVisionSDK.PlateVisionScanner)
+}
+public enum PVState {
+  case idle, running, paused, permissionDenied, error(Swift.String)
+}
+@objc @_inheritsConvenienceInitializers final public class PlateVisionScanner : ObjectiveC.NSObject {
+  public static let shared: PlateVisionSDK.PlateVisionScanner
+  weak final public var delegate: (any PlateVisionSDK.PlateVisionDelegate)?
+  final public var configuration: PlateVisionSDK.PVConfiguration {
+    get
+  }
+  final public var state: PlateVisionSDK.PVState {
+    get
+  }
+  final public var previewLayer: AVFoundation.AVCaptureVideoPreviewLayer? {
+    get
+  }
+  final public var licenceInfo: PlateVisionSDK.PlateVisionLicence? {
+    get
+  }
+  final public var licenceValidationURL: Foundation.URL
+  @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func activate(apiKey: Swift.String, secretKey: Swift.String, completion: @escaping (Swift.Result<PlateVisionSDK.PlateVisionLicence, any Swift.Error>) -> Swift.Void)
+  #endif
+  final public func configure(_ config: PlateVisionSDK.PVConfiguration)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func process(pixelBuffer: CoreVideo.CVPixelBuffer, orientation: ImageIO.CGImagePropertyOrientation = .up, completion: @escaping (Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func process(sampleBuffer: CoreMedia.CMSampleBuffer, orientation: ImageIO.CGImagePropertyOrientation = .up, completion: @escaping (Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func process(cgImage: CoreGraphics.CGImage, orientation: ImageIO.CGImagePropertyOrientation = .up, completion: @escaping (Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func process(image: UIKit.UIImage, completion: @escaping (Swift.Result<[PlateVisionSDK.PVDetectionResult], any Swift.Error>) -> Swift.Void)
+  #endif
+  final public func startScanning()
+  final public func stopScanning()
+  final public func pause()
+  final public func resume()
+  final public func captureOnce()
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func captureStillImage(completion: @escaping (UIKit.UIImage?) -> Swift.Void)
+  #endif
+  @objc deinit
+}
+extension PlateVisionSDK.PlateVisionScanner : AVFoundation.AVCaptureVideoDataOutputSampleBufferDelegate {
+  @objc final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class PVPreviewView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency final public func setLayer(_ layer: AVFoundation.AVCaptureVideoPreviewLayer)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @objc deinit
+}
+@available(iOS 16.0, *)
+@_Concurrency.MainActor @preconcurrency public struct PVCameraPreview : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public let sdk: PlateVisionSDK.PlateVisionScanner
+  @_Concurrency.MainActor @preconcurrency public init(sdk: PlateVisionSDK.PlateVisionScanner = .shared)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: PlateVisionSDK.PVCameraPreview.Context) -> PlateVisionSDK.PVPreviewView
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: PlateVisionSDK.PVPreviewView, context: PlateVisionSDK.PVCameraPreview.Context)
+  @available(iOS 16.0, *)
+  public typealias Body = Swift.Never
+  @available(iOS 16.0, *)
+  public typealias Coordinator = Swift.Void
+  @available(iOS 16.0, *)
+  public typealias UIViewType = PlateVisionSDK.PVPreviewView
+}
+extension PlateVisionSDK.PlateVisionLicence.PlateVisionTier : Swift.Equatable {}
+extension PlateVisionSDK.PlateVisionLicence.PlateVisionTier : Swift.Hashable {}
+extension PlateVisionSDK.PlateVisionLicence.PlateVisionTier : Swift.RawRepresentable {}
+extension PlateVisionSDK.PVRegion : Swift.Equatable {}
+extension PlateVisionSDK.PVRegion : Swift.Hashable {}
+extension PlateVisionSDK.PVRegion : Swift.RawRepresentable {}
+@available(iOS 16.0, *)
+extension PlateVisionSDK.PVCameraPreview : Swift.Sendable {}
